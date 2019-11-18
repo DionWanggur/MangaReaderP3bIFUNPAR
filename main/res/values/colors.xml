@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name ="colorNavigationIcon">#dae9f6</color>
-    <color name="colorNavigationText">#ffff</color>
+    <color name ="colorNavigationIcon">#0766B9</color>
+    <color name="colorNavigationText">#FCF7F7</color>
 </resources>
