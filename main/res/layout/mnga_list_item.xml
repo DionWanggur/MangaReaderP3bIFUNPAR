@@ -1,48 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="250dp">
 
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_gmr"
+        android:layout_width="154dp"
+        android:layout_height="143dp"
+        android:layout_gravity="center"
+        android:background="@color/cardview_dark_background">
 
-        <ImageView
-            android:id="@+id/iv_gmr"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:layout_centerInParent="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="10dp"
-            ></ImageView>
+    </ImageView>
 
-        <TextView
-            android:id="@+id/tv_jdl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/iv_gmr"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="-31dp"
-            android:layout_weight="7"
-            android:layout_centerInParent="true"
-            android:text="Naruto : Next Generation"></TextView>
+    <TextView
+        android:id="@+id/tv_jdl"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-31dp"
+        android:text="Naruto : Next Generation">
 
-        <Button
-            android:id="@+id/btn_bc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/tv_jdl"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="-52dp"
-            android:text="Baca">
+    </TextView>
 
-        </Button>
+    <Button
+        android:id="@+id/btn_bc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-52dp"
+        android:text="Baca">
 
-
-    </RelativeLayout>
-
+    </Button>
 </LinearLayout>

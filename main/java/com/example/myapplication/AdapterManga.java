@@ -12,29 +12,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 public class AdapterManga  extends RecyclerView.Adapter<AdapterManga.ViewHolder> {
-    List<Manga> mangaList;
-    protected Activity activity;
+   List<Manga> mangaList;
 
-    public AdapterManga(HomeFragment activity) {
-        this.activity = activity.getActivity();
-        this.mangaList = new LinkedList<>();
+    public AdapterManga(ArrayList nsms) {
+        this.mangaList = nsms;
     }
-
-    public void add(Manga manga){
-        this.mangaList.add(manga);
-        notifyDataSetChanged();
-    }
-
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(activity).inflate(R.layout.mnga_list_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.mnga_list_item,parent,false);
         ViewHolder viewHolder =new ViewHolder(view);
         return viewHolder;
     }
@@ -47,6 +40,7 @@ public class AdapterManga  extends RecyclerView.Adapter<AdapterManga.ViewHolder>
             public void onClick(View view) {
                 Manga manga = new Manga("mangaBangsat","gambarnya");
                 mangaList.add(manga);
+                notifyDataSetChanged();
                 Log.d("debug","clicked!");
             }
         });
